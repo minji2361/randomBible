@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+                        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+                        
+<mapper namespace="com.example.demo.Application.BibleMapper">
+
+	<select id="ranContent" parameterType="String" resultType="com.example.demo.Application.BibleModel">
+		SELECT * FROM (
+			SELECT * FROM BIBLE_KORHRV ORDER BY DBMS_RANDOM.VALUE()
+		) WHERE ROWNUM <![CDATA[<]]> 2
+	</select>
+	
+	<select id="getChapterName" parameterType="Integer" resultType="String">
+		SELECT NAME FROM BIBLE_NAME
+			WHERE CHAPTER = #{book}
+	</select>
+
+</mapper>

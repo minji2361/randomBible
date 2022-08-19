@@ -1,0 +1,56 @@
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+@font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.0.1');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}.fa{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+/* OVERALL ASPECT */
+
+body {
+  background-color: #74cfae;
+    font-family: "FontAwesome";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    
+    margin-top: 70px;
+}
+
+div {
+	text-align: center;
+}
+
+#check {
+	font-family: "FontAwesome";
+	font-size: 15px;
+	font-weight: 200;
+	width: 120px;
+	height: 35px;
+	margin:auto;
+	display:block;
+}
+   
+#change {
+	font-family: "FontAwesome";
+	font-size: 15px;
+	font-weight: 200;
+    width: 120px;
+    height: 35px;
+}
+   
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
