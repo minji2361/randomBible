@@ -30,3 +30,4 @@
 1. 오라클 DB 설정
   - 오라클 DB 18c 설치 및 계정 설정
   - 성경 DB 생성 - 2개 (책번호, 장, 절, 성구 테이블 / 책번호, 책이름 테이블)
+  - application.properties #DataSource 설정
